@@ -35,7 +35,7 @@ jobs:
     - name: Rename fat-jar
       run: |
         mkdir -p artifact
-        cp target/Residence-*.jar "artifact/${{ steps.vars.outputs.artifact_name }}.jar"
+        cp target/Residence*.jar "artifact/${{ steps.vars.outputs.artifact_name }}.jar"
     - name: Upload fat-jar
       uses: actions/upload-artifact@v7
       with:
